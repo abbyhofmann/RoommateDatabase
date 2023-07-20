@@ -20,7 +20,8 @@ RUN pip install -r requirements.txt
 # expose port 4000 from the container
 EXPOSE 4000
 
+ENV PYTHONPATH=/code
+
 # tell the container to run the flask application
 # CMD ["python", "src/app.py"]
 CMD ["python", "app.py"]
-
